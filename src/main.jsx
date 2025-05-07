@@ -14,6 +14,7 @@ const store = createStore(rootReducer);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
+      {/* using Context and useReducer */}
       <CounterProvider>
         <App />
       </CounterProvider>
